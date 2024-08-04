@@ -187,5 +187,5 @@ npm start
 yarn start
 ```
 
-- Client running on [`http://localhost:4200`](http://localhost:4200)
+- Client running on [`http://localhost:3000`](http://localhost:4200)
 - Server running on [`http://localhost:5000`](http://localhost:3000)

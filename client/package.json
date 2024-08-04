@@ -44,5 +44,8 @@
       ]
    },
    "main": "index.js",
-   "license": "MIT"
+   "license": "MIT",
+   "devDependencies": {
+      "ajv": "^7.2.4"
+   }
 }
