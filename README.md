@@ -1,124 +1,191 @@
-Illustration openclassrooms
+<div align="center">
+    <a href="" target="_blank">
+      <img src=".docs/preview.webp" alt="Project Banner">
+    </a>
+  <h3 align="center">Groupomania Social</h3>
+  <h4 align="center">School Project</h4>
+</div>
 
-# À l'attention de l'examinateur
+## <br /> 📋 <a name="table">Table of Contents</a>
 
+- ✨ [Introduction](#introduction)
+- ⚙️ [Tech Stack](#tech-stack)
+- 📝 [Features](#features)
+- 🚀 [Quick Start](#quick-start)
 
+## <br /> <a name="introduction">✨ Introduction</a>
 
+**[EN]** A fullstack social media application built with the MERN stack (React, Node.js, Express, MongoDB) as the final project for the Web Developer course at OpenClassrooms. This project involves creating a complete social media platform from scratch, featuring robust CRUD operations for users, posts, and admin accounts. The backend includes enhanced security measures using Helmet, Crypto-js, Bcrypt, and more. It demonstrates comprehensive skills in both frontend and backend development, including user authentication, database management, and dynamic interactions. For more information, see the [docs](/.docs) folder.
 
-# Groupomania (Social application)
+**[FR]** Une application de réseau social fullstack construite avec le stack MERN (React, Node.js, Express, MongoDB) dans le cadre du projet final du cours de Développeur Web à OpenClassrooms. Ce projet consiste à créer une plateforme de réseau social complète, avec des opérations CRUD robustes pour les utilisateurs, les publications et les comptes administrateurs. Le backend intègre des mesures de sécurité avancées telles que Helmet, Crypto-js, Bcrypt, et plus encore. Il démontre des compétences complètes en développement frontend et backend, incluant l'authentification des utilisateurs, la gestion de la base de données, et des interactions dynamiques. Pour plus d'informations, consultez le dossier [docs](/.docs)
 
-Septième et dernier projet du parcours "Développeur web" chez OpenClassrooms. L'objectif est de construire un réseau social.
+## <br /> <a name="tech-stack">⚙️ Tech Stack</a>
 
-- Créez un réseau social d’entreprise
+- **React** is a popular JavaScript library for building user interfaces, particularly single-page applications where data changes over time. React's component-based architecture allows developers to create reusable UI components, making development more efficient and the codebase easier to maintain. 
 
-- [Cahier des charges](./notes/Piiquante%20-%20Cahier%20des%20charges.pdf)
+- **Axios** is a popular JavaScript library used for making HTTP requests from a web browser or Node.js. It provides a simple and intuitive API for sending asynchronous requests to servers and handling responses. Axios supports features like request and response interception, automatic JSON data transformation, and request cancellation, making it a powerful tool for managing API interactions and handling HTTP communications in web applications.
 
-- [Aspect visuel du site](./notes/Piiquante%20-%20Aspect%20visuel.pdf)
+- **Mantine UI** is a modern React component library that provides a set of high-quality, customizable components and hooks for building user interfaces. Mantine UI is designed to be easy to use, with a focus on flexibility and accessibility. It includes components such as buttons, modals, and forms, as well as theming support, responsive design utilities, and built-in hooks for managing state and effects. It aims to streamline the development process and enhance the overall user experience with a consistent and attractive design.
 
-![screenshot](./notes/Piiquante%20-%20readme%20cover.jpg)
+- **Node.js** is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows developers to execute JavaScript on the server side, enabling the creation of scalable and high-performance applications. Node.js's non-blocking, event-driven architecture makes it particularly suitable for building real-time, data-intensive applications.
 
-<br>
+- **Express** is a minimal and flexible Node.js web application framework that provides a robust set of features for building web and mobile applications. It simplifies the process of creating RESTful APIs by providing a thin layer of fundamental web application features, including routing, middleware support, and HTTP utilities.
 
-# Lancement
+- **REST API** (Representational State Transfer Application Programming Interface) is a specific type of API that adheres to the principles of REST, an architectural style for designing networked applications. REST APIs use standard HTTP methods (GET, POST, PUT, DELETE) to interact with resources, which are typically represented in JSON or XML format. REST APIs are stateless, meaning each request from a client to the server must contain all the information needed to understand and process the request. This approach simplifies the interactions between client and server and ensures scalability and performance.
 
-Prérequis  : Node.js et YARN installés sur votre ordinateur
+- **MongoDB** is a NoSQL database that stores data in flexible, JSON-like documents. It is designed for scalability and high performance, making it suitable for applications that handle large volumes of data. MongoDB's document model allows for easy data manipulation and querying, providing a more natural way to work with data compared to traditional relational databases.
 
-- 1 : Installation de l'API (Back-end) : Dans le dossier "api", lancez "YARN" depuis votre environnement de développement/Terminal afin d'installer les dépendances.
+- **Mongoose** is an Object Data Modeling (ODM) library for MongoDB and Node.js. It provides a schema-based solution to model application data, ensuring data consistency and providing powerful tools for querying and validation. Mongoose simplifies the process of interacting with MongoDB by providing a higher abstraction layer.
 
-- 2 : Lancement de l'API : Une fois les dépendances installées, toujours dans le dossier "api", lancez le script "yarn start" depuis votre environnement de développement/Terminal. Ce script exécute la commande "nodemon index.js". Votre terminal devrait indiquer que le serveur est lancé sur le port 5000 (par défaut).
+- **NPM** (Node Package Manager) is the default package manager for Node.js. It allows developers to install, share, and manage dependencies in their projects. NPM provides access to a vast repository of open-source packages, facilitating the rapid development and integration of new features.
 
--  3 : Installation de l'application React (Front-end) : Depuis le dossier "client", lancez "YARN" depuis votre environnement de développement/Terminal afin d'installer les dépendances. 
+- **Bcrypt** is a library for hashing passwords in a secure manner. It uses a salt to protect against rainbow table attacks and employs a computationally intensive hashing algorithm, making brute-force attacks impractical. Bcrypt ensures that passwords are stored securely, enhancing the overall security of an application.
 
-- 4 : Lancement de l'application React : Une fois les dépendances installées, toujours dans le dossier "client", lancez le script "yarn start" depuis votre environnement de développement/Terminal. L'application devrait se lancer sur [localhost port 3000](http://localhost:3000/) (par défaut). 
+- **Crypto-js** is a cryptography library in JavaScript that provides various cryptographic algorithms, such as hashing, encryption, and decryption. It is used to secure data, ensuring its integrity and confidentiality. Crypto-js is commonly used for encrypting sensitive information before storing or transmitting it.
 
-<br>
+- **Dotenv** is a module that loads environment variables from a .env file into process.env. This practice helps manage configuration and secrets in Node.js applications, keeping them out of the source code and making it easier to change settings without modifying the application code.
 
-# Compétences évaluées
-- Réaliser un premier projet MERN stack complet
-- Authentifier un utilisateur et maintenir sa session (React context, JWT)
-- Implémenter un stockage de données sécurisé en utilisant une base de données (MongoDB)
-- Développer l’interface d’un site web grâce à un framework front-end (React)
+- **Helmet** is a middleware for Express applications that helps secure apps by setting various HTTP headers. It mitigates common web vulnerabilities such as cross-site scripting (XSS), clickjacking, and other web attacks by configuring appropriate security-related HTTP headers.
 
-<br>
+- **Jsonwebtoken** (JWT) is a compact, URL-safe means of representing claims to be transferred between two parties. It is commonly used for authentication and information exchange in web applications, allowing secure and verifiable transfer of information. JWTs are often used for implementing stateless authentication mechanisms.
 
-# Technologies
-- MongoDB (Mongoose)
-- Express (Application)
-- React (front-end library/framework)
-- Node.js
+- **Mongoose-unique-validator** is a plugin for Mongoose that adds pre-save validation for unique fields within a Mongoose schema. It simplifies the enforcement of uniqueness constraints in MongoDB documents, ensuring that certain fields, such as usernames or email addresses, remain unique.
 
-## API 
-Bcrypt, Crypto-js, Dotenv, Express, Helmet, Jsonwebtoken, Mongoose-unique-validator, Multer, Password-validator, Validator 
+- **Multer** is a middleware for handling multipart/form-data, which is primarily used for uploading files. It simplifies the process of handling file uploads in an Express application by providing various options for storage and file handling, making it easy to manage file uploads.
 
-## CLIENT 
-Bcrypt, Crypto-js, Dotenv, Express, Helmet, Jsonwebtoken, Mongoose-unique-validator, Multer, Password-validator, Validator 
+- **Password-validator** is a library for validating password strength and compliance with defined rules. It helps enforce security policies by ensuring passwords meet specific criteria, such as length, complexity, and character variety. This enhances the security of user accounts by promoting the use of strong passwords.
 
-<br>
+- **Validator** is a library for string validation and sanitization. It provides a set of functions for validating and sanitizing strings, helping ensure data integrity and security in web applications. Validator is commonly used for validating user input, ensuring that it meets the expected format and constraints.
 
+## <br/> <a name="features">📝 Features</a>
 
-# Scénario
-Vous êtes développeur depuis plus d'un an chez CONNECT-E, une petite agence web
-regroupant une douzaine d'employés.
-Votre directrice, Stéphanie, vient de signer un nouveau contrat avec Groupomania, un groupe
-spécialisé dans la grande distribution, et l'un des plus Kdèles clients de l'agence.
+👉 **Responsive Design**: Ensures the application is fully responsive and optimized for all devices, providing a seamless user experience on desktops, tablets, and mobile phones.
 
-Le projet consiste à construire un réseau social interne pour les employés de Groupomania. Le
-but de cet outil est de faciliter les interactions entre collègues. Le département RH de
-Groupomania a imaginé plusieurs fonctionnalités pour favoriser les échanges entre collègues. 
+👉 **User Management**: Allows users to create and manage their accounts, including registration, login, and profile updates.
 
-<br>
+👉 **CRUD Operations for Posts**: Users can create, read, update, and delete posts, including text, images, and other media.
 
-# Cahier des charges
+👉 **Admin Functionality**: Provides admin accounts with additional capabilities to manage users, moderate content, and oversee the platform’s overall health.
 
-## Identité Graphique
+👉 **RESTful API Development**: The project includes a robust RESTful API built with Node.js and Express. It supports standard HTTP methods (GET, POST, PUT, DELETE) for interacting with resources, enabling seamless CRUD operations.
 
-- Police d’écriture : tous les textes du site doivent utiliser la police Lato
-- Couleurs : vous êtes libre sur les couleurs
+👉 **Secure Data Storage**: Data is securely stored using MongoDB with Mongoose. Passwords are hashed with Bcrypt, and sensitive information is encrypted using Crypto-js, ensuring data protection and confidentiality.
 
-## Technique
-- Respecter les standards WCAG.
-- Mise en place backend / frontend / database.
-- Le projet doit être codé en JavaScript.
-- Obligation d'utiliser un framework front-end (au choix).
-- Choix de la base de données libre (MongoDB, mySQL...).
-- Fournir un README expliquant installation/lancement du projet.
+👉 **Compliance and Data Protection**: The project implements a logical data model that adheres to regulatory standards. Data is validated and sanitized to meet security and compliance requirements.
 
+👉 A**uthentication and Authorization**: Secure authentication is handled through Jsonwebtoken (JWT), providing a robust mechanism for verifying user identity and managing access to resources.
 
-## Spécifications fonctionnelles
+👉 **Enhanced Security Measures**: The application uses Helmet to set security-focused HTTP headers, protecting against common web vulnerabilities. File uploads are managed securely with Multer.
 
-### Page de connexion
-- Une page de connexion permettant à l’utilisateur de se connecter, ou bien de créer un compte s’il n’en possède pas.
-- La connexion doit se faire à partir de deux éléments : le mail et un mot de passe. 
-- Rien de plus à prévoir pour le moment.
+👉 **Environment Managemen**t: Configuration and sensitive information are managed using Dotenv, keeping environment variables and secrets out of the source code.
 
+👉 **Unique Data Validation**: Ensures uniqueness of data fields using Mongoose-unique-validator, preventing duplicate entries in the database.
 
-### Détails de la fonctionnalité de connexion
-- Un utilisateur doit avoir la possibilité de se déconnecter.
-- La session de l’utilisateur persiste pendant qu’il est connecté.
--  Les données de connexion doivent être sécurisées.
+👉 **Comprehensive Error Handling**: Implements thorough error handling and logging mechanisms to track and resolve issues effectively.
 
+👉 **Testing and Validation**: Includes testing processes to ensure the reliability and correctness of the API functionality.
 
-### Page d’accueil
-- La page d’accueil doit lister les posts créés par les différents utilisateurs.
-- On voudra que les posts soient listés de façon antéchronologique (du plus récent au plus ancien).
+## <br /> <a name="quick-start">🚀 Quick Start</a>
 
+Follow these steps to set up the project locally on your machine.
 
-### Création d’un post
-- Un utilisateur doit pouvoir créer un post.
-- Un post doit pouvoir contenir du texte et une image.
-- Un utilisateur doit aussi pouvoir modifier et supprimer ses posts.
+<br/>**Prerequisites**
 
+Make sure you have the following installed on your machine:
 
-### Système de like
-- Un utilisateur doit pouvoir liker un post, une seule fois pour chaque post.
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
 
+Install nodemon globally on your machine, open your terminal and run the following command:
+```bash
+npm install -g nodemon
+```
 
-### Rôle administrateur
-- Dans le but de pouvoir faire de la modération si nécessaire, il faudra créer un utilisateur “administrateur” ; 
-- Celui-ci aura les droits de modification /
-suppression sur tous les posts du réseau social. 
-- Il faudra donc nous communiquer les identifiants de cet administrateur.
+- **Nodemon** is a tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected.
 
-<br>
+<br/>**Cloning the Repository**
 
+```bash
+git clone {git remote URL}
+```
 
+<br/>**Installation**
+
+Let's install the project dependencies for both the client and server, from your terminal, run:
+
+```bash
+# Navigate to the client directory
+cd client
+
+# Install the necessary dependencies for the client-side application
+npm install --legacy-peer-deps
+# or
+yarn install --legacy-peer-deps
+
+# Navigate back to the root directory
+cd ..
+
+# Navigate to the server directory
+cd api
+
+# Install the necessary dependencies for the server-side application
+npm install
+# or
+yarn install
+```
+
+<br/>**Set Up Environment Variables**
+
+1. Create a new file named `.env` inside the client folder and add the following content:
+
+```env
+# Must write "REACT_APP" or it won't work
+REACT_APP_PUBLIC_FOLDER = http://localhost:5000/images/
+```
+
+2. Create a new file named `.env` inside the api folder and add the following content:
+
+```env
+PORT=5000
+
+MONGO_URI=
+
+JWT_KEY=
+
+JWT_TIME=24h
+
+CJS_KEY=
+```
+
+Replace the placeholder values with your actual respective account credentials:
+
+- [MongoDB](https://cloud.mongodb.com)
+
+<br/>**Running the Project**
+
+Installation will take a minute or two, but once that's done, you should be able to run the following command:
+
+```bash
+# Navigate to the client directory
+cd client
+
+# Start client
+npm start
+# or
+yarn start
+
+# Navigate back to the root directory
+cd ..
+
+# Navigate to the server directory
+cd api
+
+# Start server
+npm start
+# or
+yarn start
+```
+
+- Client running on [`http://localhost:4200`](http://localhost:4200)
+- Server running on [`http://localhost:5000`](http://localhost:3000)
