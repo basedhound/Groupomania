@@ -1,0 +1,31 @@
+[
+  {
+    "_id": "c7a2d025-d62b-41a8-8f13-aadea688eaf8",
+    "colName": "Groupomania (OC)",
+    "created": "2022-10-16T23:09:22.394Z",
+    "sortNum": 10000,
+    "folders": [
+      {
+        "_id": "a755f545-8c15-4363-80db-45701e56ffab",
+        "name": "Auth Requests",
+        "containerId": "",
+        "created": "2022-10-16T23:09:22.396Z",
+        "sortNum": 10000
+      },
+      {
+        "_id": "574447a9-0cfa-4a8e-8ef0-bf1dedd09abf",
+        "name": "User Requests",
+        "containerId": "",
+        "created": "2022-10-16T23:09:22.398Z",
+        "sortNum": 20000
+      },
+      {
+        "_id": "4c478b01-2e2c-42a8-9dae-34a5c0634a69",
+        "name": "Post Requests",
+        "containerId": "",
+        "created": "2022-10-16T23:09:22.399Z",
+        "sortNum": 30000
+      }
+    ]
+  }
+]
