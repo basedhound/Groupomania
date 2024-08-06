@@ -27,11 +27,11 @@
 
 - [**Mantine UI**](https://mantine.dev/getting-started/) is a modern React component library that provides a set of high-quality, customizable components and hooks for building user interfaces. Mantine UI is designed to be easy to use, with a focus on flexibility and accessibility. It includes components such as buttons, modals, and forms, as well as theming support, responsive design utilities, and built-in hooks for managing state and effects. It aims to streamline the development process and enhance the overall user experience with a consistent and attractive design.
 
+- [**REST API**](https://blog.postman.com/rest-api-examples/) (Representational State Transfer Application Programming Interface) is a specific type of API that adheres to the principles of REST, an architectural style for designing networked applications. REST APIs use standard HTTP methods (GET, POST, PUT, DELETE) to interact with resources, which are typically represented in JSON or XML format. REST APIs are stateless, meaning each request from a client to the server must contain all the information needed to understand and process the request. This approach simplifies the interactions between client and server and ensures scalability and performance.
+
 - [**Node.js**](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs) is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows developers to execute JavaScript on the server side, enabling the creation of scalable and high-performance applications. Node.js's non-blocking, event-driven architecture makes it particularly suitable for building real-time, data-intensive applications.
 
 - [**Express**](https://expressjs.com/en/starter/installing.html) is a minimal and flexible Node.js web application framework that provides a robust set of features for building web and mobile applications. It simplifies the process of creating RESTful APIs by providing a thin layer of fundamental web application features, including routing, middleware support, and HTTP utilities.
-
-- [**REST API**](https://blog.postman.com/rest-api-examples/) (Representational State Transfer Application Programming Interface) is a specific type of API that adheres to the principles of REST, an architectural style for designing networked applications. REST APIs use standard HTTP methods (GET, POST, PUT, DELETE) to interact with resources, which are typically represented in JSON or XML format. REST APIs are stateless, meaning each request from a client to the server must contain all the information needed to understand and process the request. This approach simplifies the interactions between client and server and ensures scalability and performance.
 
 - [**MongoDB**](https://www.mongodb.com/docs/atlas/getting-started/) is a NoSQL database that stores data in flexible, JSON-like documents. It is designed for scalability and high performance, making it suitable for applications that handle large volumes of data. MongoDB's document model allows for easy data manipulation and querying, providing a more natural way to work with data compared to traditional relational databases.
 
@@ -49,7 +49,7 @@
 
 - [**Jsonwebtoken**](https://www.npmjs.com/package/jsonwebtoken) (JWT) is a compact, URL-safe means of representing claims to be transferred between two parties. It is commonly used for authentication and information exchange in web applications, allowing secure and verifiable transfer of information. JWTs are often used for implementing stateless authentication mechanisms.
 
-- **Mongoose-unique-validator** is a plugin for Mongoose that adds pre-save validation for unique fields within a Mongoose schema. It simplifies the enforcement of uniqueness constraints in MongoDB documents, ensuring that certain fields, such as usernames or email addresses, remain unique.
+- [**Mongoose-unique-validator**](https://www.npmjs.com/package/mongoose-unique-validator) is a plugin for Mongoose that adds pre-save validation for unique fields within a Mongoose schema. It simplifies the enforcement of uniqueness constraints in MongoDB documents, ensuring that certain fields, such as usernames or email addresses, remain unique.
 
 - [**Multer**](https://www.npmjs.com/package/multer) is a middleware for handling multipart/form-data, which is primarily used for uploading files. It simplifies the process of handling file uploads in an Express application by providing various options for storage and file handling, making it easy to manage file uploads.
 
